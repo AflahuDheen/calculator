@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="mainBody">
+        <div class="calc">
+            <div class="output">
+                <input type="text" id="screen">
+            </div>
+           <div class="button">
+            <div class="side-bar">
+                <div class="column">
+                    <button onclick="cleared()" class="clears">C</button>
+                </div>
+                <div class="column">
+                    <button onclick="clearDisplay()" class="delete">DEL</button>
+                </div>
+                <div class="column">
+                    <button onclick="clicked('/')" class="divide">%</button>
+                </div>
+                <div class="column">
+                    <button onclick="clicked('*')" class="multiplie">X</button>
+                </div>
+                <div class="column">
+                    <button onclick="clicked('-')" class="minus">_</button>
+                </div>
+                <div>
+                    <button onclick="clicked('+')" class="add">+</button>
+                </div>
+            </div>
+            <div class="row1">
+                <button onclick="clicked(7)" class="seven">7</button>
+                <button onclick="clicked(8)" class="eight">8</button>
+                <button onclick="clicked(9)" class="nine">9</button>
+            </div>
+            <div class="row2">
+                <button onclick="clicked(4)" class="four">4</button>
+                <button onclick="clicked(5)" class="five">5</button>
+                <button onclick="clicked(6)" class="six">6</button>
+            </div>
+            <div class="row3">
+                <button onclick="clicked(1)" class="one">1</button>
+                <button onclick="clicked(2)" class="two">2</button>
+                <button onclick="clicked(3)" class="three">3</button>
+            </div>
+            <div class="row4">
+                <button onclick="clicked('.')" class="dot">.</button>
+                <button onclick="clicked(0)" class="zero">0</button>
+                <button onclick="equalClick()" class="equal">=</button>
+            </div>
+
+           </div>
+        </div>
+
+    </div>
+</body>
+</html>
